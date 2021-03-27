@@ -16,11 +16,8 @@ class Covfefe(commands.Cog):
         """
         https://codegolf.stackexchange.com/a/123697
         """
-        try:
-            b, c, v = re.findall(f"(.*?[{k}([^{k}.*?([{k}", x)[0]
-            return b + c + (("bcdfgkpstvz" + c)["pgtvkgbzdfs".find(c)] + v) * 2
-        except:
-            return None
+        b, c, v = re.findall(f"(.*?[{k}([^{k}.*?([{k}", x)[0]
+        return b + c + (("bcdfgkpstvz" + c)["pgtvkgbzdfs".find(c)] + v) * 2
 
     async def red_delete_data_for_user(self, **kwargs):
         """
